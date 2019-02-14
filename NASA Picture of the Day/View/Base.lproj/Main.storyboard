@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NASA_Picture_of_the_Day" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4iK-jE-jHC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KYD-gj-TUz">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="323.5"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GPL-HJ-Uag">
+                                        <rect key="frame" x="0.0" y="323.5" width="375" height="323.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solar System Family Portait" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KRE-hL-nOb">
+                                                <rect key="frame" x="8" y="8" width="359" height="35"/>
+                                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="84P-RN-frH">
+                                                <rect key="frame" x="8" y="51" width="359" height="236"/>
+                                                <mutableString key="text">On Valentine's Day in 1990, cruising four billion miles from the Sun, the Voyager 1 spacecraft looked back one last time to make this first ever Solar System family portrait. The complete portrait is a 60 frame mosaic made from a vantage point 32 degrees above the ecliptic plane. In it, Voyager's wide angle camera frames sweep through the inner Solar System at the left, linking up with gas giant Neptune, the Solar System's outermost planet, at the far right. Positions for Venus, Earth, Jupiter, Saturn, Uranus, and Neptune are indicated by letters, while the Sun is the bright spot near the center of the circle of frames. The inset frames for each of the planets are from Voyager's narrow field camera. Unseen in the portrait are Mercury, too close to the Sun to be detected, and Mars, unfortunately hidden by sunlight scattered in the camera's optical system. Closer to the Sun than Neptune at the time, small, faint Pluto's position was not covered.</mutableString>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Copyright" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xk-ga-p28">
+                                                <rect key="frame" x="8" y="295" width="359" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="0xk-ga-p28" firstAttribute="leading" secondItem="GPL-HJ-Uag" secondAttribute="leading" constant="8" id="8eb-BW-wA8"/>
+                                            <constraint firstAttribute="trailing" secondItem="0xk-ga-p28" secondAttribute="trailing" constant="8" id="B78-O1-kig"/>
+                                            <constraint firstAttribute="trailing" secondItem="KRE-hL-nOb" secondAttribute="trailing" constant="8" id="Fz7-PX-H8V"/>
+                                            <constraint firstAttribute="bottom" secondItem="0xk-ga-p28" secondAttribute="bottom" constant="8" id="Qie-uq-ZSK"/>
+                                            <constraint firstItem="0xk-ga-p28" firstAttribute="top" secondItem="84P-RN-frH" secondAttribute="bottom" constant="8" id="R90-XX-ibz"/>
+                                            <constraint firstItem="84P-RN-frH" firstAttribute="top" secondItem="KRE-hL-nOb" secondAttribute="bottom" constant="8" id="Xzt-k8-2IM"/>
+                                            <constraint firstItem="KRE-hL-nOb" firstAttribute="top" secondItem="GPL-HJ-Uag" secondAttribute="top" constant="8" id="aom-1v-AxI"/>
+                                            <constraint firstAttribute="trailing" secondItem="84P-RN-frH" secondAttribute="trailing" constant="8" id="daB-BB-nxP"/>
+                                            <constraint firstItem="KRE-hL-nOb" firstAttribute="leading" secondItem="GPL-HJ-Uag" secondAttribute="leading" constant="8" id="idd-Fp-LXA"/>
+                                            <constraint firstItem="84P-RN-frH" firstAttribute="leading" secondItem="GPL-HJ-Uag" secondAttribute="leading" constant="8" id="kre-iS-Co2"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4iK-jE-jHC" secondAttribute="trailing" id="MvV-zr-ZHf"/>
+                            <constraint firstItem="4iK-jE-jHC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eiu-Af-YsA"/>
+                            <constraint firstItem="4iK-jE-jHC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pWU-Gt-eea"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4iK-jE-jHC" secondAttribute="bottom" id="uc9-xg-Tob"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="copyrightLabel" destination="0xk-ga-p28" id="1wo-Rk-EYG"/>
+                        <outlet property="descriptionLabel" destination="84P-RN-frH" id="B3J-tv-Zbb"/>
+                        <outlet property="photoImageView" destination="KYD-gj-TUz" id="Iva-mT-DZa"/>
+                        <outlet property="titleLabel" destination="KRE-hL-nOb" id="oy7-HZ-foT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
+        </scene>
+    </scenes>
+</document>
