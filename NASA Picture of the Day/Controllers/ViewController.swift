@@ -63,9 +63,10 @@ class ViewController: UIViewController {
                 DispatchQueue.main.async {
                     self.photoImageView.image = image
                 }
+                
+                self.dataRequested = false
             })
         }
-        dataRequested = false
     }
 
     func updateUI() {
