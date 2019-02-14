@@ -31,7 +31,7 @@ class PhotoInfoController {
             let jsonDecoder = JSONDecoder()
             
             guard let photoInfo = try? jsonDecoder.decode(PhotoInfo.self, from: data) else {
-                print("Error in \(#function) on \(#line): can't decode the data")
+                print("Error in \(#function) on \(#line): can't decode the data \(String(data: data, encoding: .utf8) ?? "")")
                 completion(nil)
                 return
             }
